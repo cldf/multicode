@@ -8,7 +8,7 @@ def read(fname):
 
 setup(
     name='multicode',
-    version='0.1.0',
+    version='0.1.1',
     author='Johann-Mattis List',
     description='A python package to help avoid pitfalls when using unicode for linguistic data.',
     long_description=read("README.rst"),
