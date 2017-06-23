@@ -1,5 +1,10 @@
 # Multicode: Miscelleneous functions for handling unicode in transcriptions
 
+[![Build Status](https://travis-ci.org/clpn/multicode.svg?branch=master)](https://travis-ci.org/clpn/multicode)
+[![codecov](https://codecov.io/gh/clpn/multicode/branch/master/graph/badge.svg)](https://codecov.io/gh/clpn/multicode)
+[![PyPI](https://img.shields.io/pypi/v/multicode.svg)](https://pypi.python.org/pypi/multicode)
+
+
 ## General information
 
 This repository provides code and data to normalize datasets, to avoid pitfalls of unicode when creating linguistic data, and to infer general information about digital data when dealing with it in linguistic contexts.
