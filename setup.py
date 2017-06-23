@@ -7,6 +7,7 @@ setup(
     license="Apache 2",
     packages=find_packages(),
     install_requires=[
+        'six',
         'clldutils>=1.12.7',
     ],
     tests_require=['nose', 'coverage', 'mock'],
