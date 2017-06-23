@@ -15,4 +15,4 @@ Other cases include specific writing systems, like CJK systems, where we want to
 
 ## Structure of the Repository
 
-Our repository contains data and code. Data is presented in one of two basic formats. We use YAML for the convenient storing of confusable characters, and for the translation among different transcription systems (such as sound classes in the LingPy library), and TSV for tabular data. We prefer YAML over JSON for reasons of readability.
+Our repository contains data and code. Data is represented in a custom CSV dialect, namely tab-separated, with `|` as optional secondary separator for field content. Unicode characters can be represented either as UTF-8 encoded strings, or using notation like `U+0020`.
