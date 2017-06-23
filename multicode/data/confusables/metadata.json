@@ -1,0 +1,65 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "en"
+        }
+    ],
+    "dialect": {
+        "header": false,
+        "commentPrefix": "#",
+        "delimiter": "\t",
+        "quoteChar": null,
+        "encoding": "utf-8"
+    },
+    "tables": [
+        {
+            "url": "basic.tsv",
+            "tableSchema": {
+                "columns": [
+                    {
+                        "name": "char",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "alias",
+                        "datatype": "string",
+                        "separator": "|"
+                    }
+                ]
+            }
+        },
+        {
+            "url": "epa.tsv",
+            "tableSchema": {
+                "columns": [
+                    {
+                        "name": "char",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "alias",
+                        "datatype": "string",
+                        "separator": "|"
+                    }
+                ]
+            }
+        },
+        {
+            "url": "ipa.tsv",
+            "tableSchema": {
+                "columns": [
+                    {
+                        "name": "char",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "alias",
+                        "datatype": "string",
+                        "separator": "|"
+                    }
+                ]
+            }
+        }
+    ]
+}

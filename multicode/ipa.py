@@ -1,12 +1,10 @@
 # *-* coding: utf-8 *-*
 from __future__ import unicode_literals, print_function, division
+from functools import partial
 
-from multicode.util import data_path, load_yaml
+from multicode.util import load
 
 
-def ipa_confusables():
-
-    return load_yaml('confusables', 'ipa.yaml', revert=True)
-
-def basic_confusables():
-    return load_yaml('confusables', 'basic.yaml', revert=True)
+ipa_confusables = partial(load, 'confusables', table_name='ipa.tsv')
+epa_confusables = partial(load, 'confusables', table_name='epa.tsv')
+basic_confusables = partial(load, 'confusables', table_name='basic.tsv')
