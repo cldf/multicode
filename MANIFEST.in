@@ -1,3 +1,2 @@
-include *.md *.rst LICENSE
-recursive-include multicode *.json
-recursive-include multicode *.tsv
+graft src
+global-exclude *.py[co]
