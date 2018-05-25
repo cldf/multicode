@@ -13,8 +13,7 @@ tox -r
 flake8 src
 ```
 
-- Change version to the new version number in
-
+- Update the version number, by removing the trailing `.dev0` in:
   - `setup.py`
   - `pycldf/__init__.py`
 
@@ -28,14 +27,28 @@ git commit -a -m"bumped version number"
 git tag -a v<version> -m"first version to be released on pypi"
 ```
 
+- Release to PyPI (see https://github.com/di/markdown-description-example/issues/1#issuecomment-374474296):
+```shell
+rm dist/*
+python setup.py sdist
+twine upload dist/*
+rm dist/*
+python setup.py bdist_wheel
+twine upload dist/*
+```
+
 - Push to github:
 ```
 git push origin
 git push --tags
 ```
 
-- Make sure your system Python has ``setuptools-git`` installed and release to PyPI:
-```
-git checkout tags/v$1
-python setup.py sdist register upload
+- Change version for the next release cycle, i.e. incrementing and adding .dev0
+  - `setup.py`
+  - `src/multicode/__init__.py`
+
+- Commit/push the version change:
+```shell
+git commit -a -m "bump version for development"
+git push origin
 ```
