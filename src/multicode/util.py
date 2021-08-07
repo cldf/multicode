@@ -1,13 +1,13 @@
 import re
-from pathlib import Path
+import pathlib
 
 from csvw.metadata import TableGroup
 
-CODE_POINT_PATTERN = re.compile('U\+[0-9a-fA-F]{4}$')
+CODE_POINT_PATTERN = re.compile(r'U\+[0-9a-fA-F]{4}$')
 
 
 def data_path(*comps):
-    return Path(__file__).parent.joinpath('data', *comps)
+    return pathlib.Path(__file__).parent.joinpath('data', *comps)
 
 
 def char(spec):
