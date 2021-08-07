@@ -27,13 +27,10 @@ git commit -a -m"bumped version number"
 git tag -a v<version> -m"first version to be released on pypi"
 ```
 
-- Release to PyPI (see https://github.com/di/markdown-description-example/issues/1#issuecomment-374474296):
+- Release to PyPI:
 ```shell
 rm dist/*
-python setup.py sdist
-twine upload dist/*
-rm dist/*
-python setup.py bdist_wheel
+python setup.py sdist bdist_wheel
 twine upload dist/*
 ```
 
