@@ -24,7 +24,7 @@ git commit -a -m"bumped version number"
 
 - Create a release tag:
 ```
-git tag -a v<version> -m"first version to be released on pypi"
+git tag -a v<version> -m"release"
 ```
 
 - Release to PyPI:

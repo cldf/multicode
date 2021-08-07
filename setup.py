@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='multicode',
-    version='0.2.1',
+    version='0.2.2.dev0',
     author='Johann-Mattis List and Robert Forkel',
     description='A python package to help avoid pitfalls when using unicode for '
                 'linguistic data.',
